@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Helvetica","Arial","Hiragino Sans","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+}
+
+/* ヘッダー */
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.header-logo {
+    height: 90px;
+    width: 180px;
+    margin: 20px auto;
+}
+
+.header-logo img {
+    height: 90px;
+    width: 180px;
+}
+
+/* 情報入力項目 */
+.baseinformation {
+    border: solid 3px #aaa;
+    border-radius: 5px;
+    margin: 30px auto;
+    padding-bottom: 15px;
+    width: 560px;
+    
+}
+.baseinformation h2 {
+    background-color: rgb(255, 147, 30);
+    color: #292929;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+}
+.baseinformation h3 {
+    border-top: solid 1.5px #aaa;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 70px;
+    padding-top: 20px;
+    width: 557px;
+}
+
+.kangi, .kana {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.kangi input, .kana input, .number input {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    box-shadow: 1px 1px #aaa inset;
+    padding: 15px;
+    margin: 10px 20px;
+}
+
+.birthday, .gender {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.birthday input {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    box-shadow: 1px 1px #aaa inset;
+    padding: 15px;
+    margin: 10px 20px;
+    width: 125px;
+}
+
+.man, .woman {
+    width: 125px;
+    text-align: center;
+}
+
+.gender label {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px ;
+    margin: 10px 20px;
+    width: 125px;
+}
+/* 性別ラジオボタンカスタム */
+input[type = radio] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background: #aaa;
+    border: solid 1px #000;
+}
+
+.number {
+    padding-bottom: 15px;
+}
+
+.mail, .number {
+    display: block;
+    margin: 0 auto;
+    width: 495px;   
+} 
+
+.mail input {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    box-shadow: 1px 1px #aaa inset;
+    padding: 15px;
+    margin: 10px 20px 25px 20px;
+    width: 460px;
+}
+
+.live {
+    padding-bottom: 15px;
+}
+
+.liveform {
+    display: flex;
+    justify-content: center;
+}
+
+.live label {
+    display: inline-block;
+    padding: 15px 0 0 40px;
+}
+
+#postcode  {
+    margin: 5px 20px;
+    width: 210px;
+}
+
+.live label span {
+    visibility: hidden;
+}
+
+.live select {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px 20px;
+    text-align: center;
+    width: 210px;
+}
+
+.live input {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    box-shadow: 1px 1px #aaa inset;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.liveplace input {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    box-shadow: 1px 1px #aaa inset;
+    padding: 15px;
+    margin: 10px 20px 25px 20px;
+    width: 460px;
+}
+
+.liveplace {
+    display: block;
+    margin: 0 auto;
+    width: 495px;   
+}
+
+.liveplace label {
+    padding: 15px 0 0 40px;
+}
+
+.kana input:hover, .kangi input:hover, .number input:hover,
+ .birthday input:hover, .live input:hover, .mail input:hover,
+ .gender label:hover, .live select:hover {
+    background-color: #eee;
+}
+
+.kana input:focus, .kangi input:focus, .number input:focus,
+ .birthday input:focus, .live input:focus, .mail input:focus {
+    background-color: #eee;
+}
+
+.next {
+    margin: 70px 0 25px;
+    text-align: center;
+}
+
+.next a {
+    background-color: rgb(64, 55, 195);
+    border: solid 2px rgb(64, 55, 195);
+    /* background-color: rgb(255, 147, 30);
+    border: solid 2px rgb(255, 147, 30); */
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px;
+    margin: auto;
+    width: 120px;
+}
+
+.next a:hover {
+    background-color: rgb(87, 79, 200);
+    border: solid 2px rgb(87, 79, 200);
+}
+
+
+/* フッター */
+.footer-text {
+    text-align: center;
+    margin: 35px;
+}
+
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+@media screen and (max-width:430px)  {
+   /* 情報入力項目 */
+.baseinformation {
+    width: 100vw;  
+}
+
+.baseinformation h3 {
+    font-weight: 500;
+    padding-left: 0;
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.kangi input, .kana input {
+    width: 150px;
+}
+
+.birthday input {
+    margin: 10px;
+    width: 110px;
+}
+
+.gender label {
+    margin: 10px;
+    width: 110px;
+}
+
+.number, .mail {
+    display: block;
+    margin-left: 10px;
+    width: 90%;   
+}
+
+.number input {
+    width: 95%;
+}
+
+.mail input {
+    margin: 10px 20px 25px 20px;
+    width: 95%;
+}
+
+.live {
+    padding-bottom: 0;
+}
+
+#postcode  {
+    width: 150px;
+}
+
+.live select {
+    width: 150px;
+}
+
+.liveplace input {
+    margin: 10px 20px;
+    width: 95%;
+}
+
+.liveplace {
+    display: block;
+    margin-left: 10px;
+    width: 90%;   
+}
+
+.liveplace label {
+    visibility: hidden;
+}
+
+/* フッター */
+.footer-text {
+    text-align: center;
+    margin: 35px;
+} 
+}
+
+@media screen and (max-width:375px) {
+    .birthday input {
+        margin: 10px;
+        width: 100px;
+    }
+}
