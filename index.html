@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宿.com</title>
+    <link rel="icon" href="./IMG/rogo.ico" class = "icon">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class = "wrapper">
+        <div class = "LP"><img src="./IMG/レンタカーバナー.jpg" alt="広告"></div>
+
+        <div class = "header">
+
+            <div class = "header-navi">
+
+                <div class = "header-main">
+                    <div class ="logoimg"></div>
+                    <div>宿・ホテル</div>
+                    <div>国内</div>
+                    <div>遊び・レジャー</div>
+                </div>
+                
+                <div class = "header-menu">
+
+                    <div>よくある質問</div>                    
+                    <div><a href="./member.html" target="_blank">会員登録</a></div>
+                    <div><a href="./login.html" target="_blank">ログイン</a></div>
+
+                </div>
+
+            </div>
+
+            <div class = "header-photo">
+                
+                <p class = "campaign">地方応援キャンペーン<br>
+                <span class = "campaign-period">予約受付：6/1（土）から</span><br>
+                <a href=""><span class = "campaign-detail">詳しくみる</span></a>
+                </p>
+                
+            </div>
+
+            <div class = "header-inputitem">
+                <div class = "placeitem">
+                    <label for="place">目的地</label><br>
+                    <input type="text" value="" placeholder="エリア・キーワードなど" id = "place" name = "place">
+                </div>
+
+                <div class = "dayitem">
+                    <label for="day">宿泊日</label><br>
+                    <div class = "flex">
+                        <input type="date" name = "firstday">
+                        <p>〜</p>
+                        <input type="date" name = "lastdays">
+                    </div>
+                    
+                </div>
+
+                <div class = peopleitem>
+
+                    <div class ="adultlabel">
+                        <label for="adult">大人</label><br>
+                        <select  name="count" id="adult">
+                            <option value="1">１人</option>
+                            <option value="2">２人</option>
+                            <option value="3">３人</option>
+                            <option value="4">４人</option>
+                            <option value="5">５人</option>
+                            <option value="6">６人</option>
+                            <option value="7">７人</option>
+                            <option value="8">８人</option>
+                            <option value="9">９人</option>
+                            <option value="10">１０人</option>
+                        </select>
+                    </div>
+                    
+                    <div class="childlabel">
+                        <label for="child"><span>&nbsp;</span>子供</label><br>
+                        <select name="child" id="child">
+                            <option value="0">０人</option>
+                            <option value="1">１人</option>
+                            <option value="2">２人</option>
+                            <option value="3">３人</option>
+                            <option value="4">４人</option>
+                            <option value="5">５人</option>
+                            <option value="6">６人</option>
+                            <option value="7">７人</option>
+                            <option value="8">８人</option>
+                            <option value="9">９人</option>
+                            <option value="10">１０人</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class = "search">
+                    <a href="">検索する</a>
+                </div>
+
+            </div>
+            
+            
+        </div>
+
+      
+
+        <div class = "container">
+
+            <div class = "trip">
+
+                <h1 class="hotel-h1">人気のホテル</h1>
+                <div class = "hotel">
+                    
+                    <div class = "item">
+                        <a href=""><img src="./IMG/ニューオオタニ大阪.jpg" alt="">
+                        <p class = "hotelname">ホテルニューオオタニ 大阪</p>
+                        <p class = "placename">大阪府／大阪市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="5.0"></span>
+                            <span class = "ratecolor">5.0</span>
+                        </p>
+                        <p class = "money"><span>（税込）</span>¥ 40,000<span> 〜</span></p>
+                        <p class = "other"></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/日光ホテル.jpg" alt="ホテルハーヴェスト鬼怒川"></a>
+                        <p class = "hotelname">ホテルハーヴェスト鬼怒川</p>
+                        <p class = "placename">栃木県／日光市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.5"></span>
+                            <span class = "ratecolor">4.5</span>
+                        </p>
+                        <p class = "money"><span>（税込）</span>¥ 18,000<span> 〜</span></p>
+                        <p class = "other"></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/アパホテル幕張.jpg" alt="アパホテル東京ベイ幕張"></a>
+                        <p class = "hotelname">アパホテル東京ベイ幕張</p>
+                        <p class = "placename">千葉県／千葉市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.0"></span>
+                            <span class = "ratecolor">4.0</span>
+                        </p>
+                        <p class = "money"><span>（税込）</span>¥ 10,000<span> 〜</span></p>
+                        <p class = "other"></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/ニュー八景園.jpg" alt="ニュー八景園"></a>
+                        <p class = "hotelname">ニュー八景園</p>
+                        <p class = "placename">静岡県／伊豆の国市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.5"></span>
+                            <span class = "ratecolor">4.5</span>
+                        </p>
+                        <p class = "money"><span>（税込）</span>¥ 16,000<span> 〜</span></p>
+                        <p class = "other"></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/ウィステリアオーシャン今帰仁.jpg" alt="ウィステリアオーシャン今帰仁"></a>
+                        <p class = "hotelname">wisteria Ocean Nakijin</p>
+                        <p class = "placename">沖縄県／国頭郡今帰仁村</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="5.0"></span>
+                            <span class = "ratecolor">5.0</span>
+                        </p>
+                        <p class = "money"><span>（税込）</span>¥ 23,000<span> 〜</span></p>
+                        <p class = "other"></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/東京ステーションホテル.JPG" alt="東京ステーションホテル"></a>
+                        <p class = "hotelname">東京ステーションホテル</p>
+                        <p class = "placename">東京都／千代田区</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="5.0"></span>
+                            <span class = "ratecolor">5.0</span>
+                        </p>
+                        <p class = "money"><span>（税込）</span>¥ 95,000<span> 〜</span></p>
+                        <p class = "other"></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/阿波の土柱.jpeg" alt="癒しの宿 土柱ランド新温泉"></a>
+                        <p class = "hotelname">癒しの宿 土柱ランド新温泉</p>
+                        <p class = "placename">徳島県／阿波市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="3.5"></span>
+                            <span class = "ratecolor">3.5</span>
+                        </p>
+                        <p class = "money"><span>（税込）</span>¥ 9,500<span> 〜</span></p>
+                        <p class = "other"></p>
+                    </div>
+                </div>
+
+
+                <h1 class ="spot-h1">話題のスポット</h1>
+                <div class = "spot">
+                    
+                    <div class = "item">
+                        <a href=""><img src="./IMG/大麻比古神社.JPG" alt="大麻比古神社"></a>
+                        <p class = "spotname">大麻比古神社</p>
+                        <p class = "placename">徳島県／鳴門市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.5"></span>
+                            <span class = "ratecolor">4.5</span>
+                        </p>
+                        <p class = "other"><a href="">クチコミ&nbsp;(108)</a></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/六甲山.JPG" alt="六甲山"></a>
+                        <p class = "spotname">六甲山</p>
+                        <p class = "placename">兵庫県／神戸市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.0"></span>
+                            <span class = "ratecolor">4.0</span>
+                        </p>
+                        <p class = "other"><a href="">クチコミ&nbsp;(105)</a></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/富士本栖湖リゾート（山梨）.JPG" alt="富士本栖湖リゾート"></a>
+                        <p class = "spotname">富士本栖湖リゾート</p>
+                        <p class = "placename">山梨県／富士河口湖町</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.5"></span>
+                            <span class = "ratecolor">4.5</span>
+                        </p>
+                        <p class = "other"><a href="">クチコミ&nbsp;(220)</a></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/白糸の滝（静岡）.JPG" alt="白糸の滝"></a>
+                        <p class = "spotname">白糸の滝</p>
+                        <p class = "placename">静岡県／富士宮市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.0"></span>
+                            <span class = "ratecolor">4.0</span>
+                        </p>
+                        <p class = "other"><a href="">クチコミ&nbsp;(123)</a></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/鎌倉大仏.JPG" alt="鎌倉の大仏"></a>
+                        <p class = "spotname">高徳院</p>
+                        <p class = "placename">神奈川県／鎌倉市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.0"></span>
+                            <span class = "ratecolor">4.0</span>
+                        </p>
+                        <p class = "other"><a href="">クチコミ&nbsp;(301)</a></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/あけぼの子供の森公園.jpeg" alt="あけぼの子供の森公園"></a>
+                        <p class = "spotname">あけぼの子供の森公園</p>
+                        <p class = "placename">埼玉県／飯能市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="3.5"></span>
+                            <span class = "ratecolor">3.5</span>
+                        </p>
+                        <p class = "other"><a href="">クチコミ&nbsp;(72)</a></p>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/夢の吊り橋.JPG" alt="夢の吊り橋"></a>
+                        <p class = "spotname">夢の吊り橋</p>
+                        <p class = "placename">静岡県／川根本町</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.5"></span>
+                            <span class = "ratecolor">4.5</span>
+                        </p>
+                        <p class = "other"><a href="">クチコミ&nbsp;(99)</a></p>
+                    </div>
+                </div>
+
+                <h1 class="oshi-h1">今週のイチオシ!!</h1>
+                <div class = "recommend">
+                    
+                    <div class = "photo1">
+                        <a href=""><span class="pc">美ら海水族館（沖縄）</span><span class="mobile">沖縄</span></a>
+                    </div>
+
+                    <div class = "photo2">
+                        <a href=""><span class="pc">東尋坊（福井）</span><span class="mobile">福井</span></a>
+                    </div>
+
+                    <div class = "photo3">
+                        <a href=""><span class="pc">アドベンチャーワールド<br>（和歌山）</span><span class="mobile">和歌山</span></a>
+                    </div>
+
+                    <div class = "photo4">
+                        <a href=""><span class="pc">いおワールドかごしま水族館（鹿児島）</span><span class="mobile">鹿児島</span></a>
+                    </div>
+
+                    <div class = "photo5">
+                        <a href=""><span class="pc">松本城（長野）</span><span class="mobile">長野</span></a>
+                    </div>
+
+                    <div class = "photo6">
+                        <a href=""><span class="pc">渦潮クルーズ（徳島県）</span><span class="mobile">徳島</span></a>
+                    </div>
+
+                    <div class = "photo7">
+                        <a href=""><span class="mobile">静岡</span></a>
+                    </div>
+
+                    <div class = "photo8">
+                        <a href=""><span class="mobile">神奈川</span></a>
+                    </div>
+
+                    <div class = "photo9">
+                        <a href=""><span class="mobile">栃木</span></a>
+                    </div>
+
+                </div>
+
+                <h1 class="ranking-h1">人気ランキング</h1>
+                <div class = "ranking">
+                    
+                    <div class = "item">
+                        <a href=""><img src="./IMG/桜島.jpg" alt="桜島"></a>
+                        <p class = "spotname">桜島</p>
+                        <p class = "placename">鹿児島県／鹿児島市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.0"></span>
+                            <span class = "ratecolor">4.0</span>
+                        </p>
+                        <div class="rank">
+                            <p class="first">１位</p>
+                            <img src="./IMG/順位アップ.png" alt="↑">
+                        </div>
+                        
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/USJ（スポット）.png" alt="USJ"></a>
+                        <p class = "spotname">USJ</p>
+                        <p class = "placename">大阪府／大阪市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="5.0"></span>
+                            <span class = "ratecolor">5.0</span>
+                        </p>
+                        <div class="rank">
+                            <p class="second">２位</p>
+                            <img src="./IMG/順位キープ.png" alt="→">
+                        </div>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/日光東照宮.JPG" alt="日光東照宮"></a>
+                        <p class = "spotname">日光東照宮</p>
+                        <p class = "placename">栃木県／日光市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.5"></span>
+                            <span class = "ratecolor">4.5</span>
+                        </p>
+                        <div class="rank">
+                            <p class="third">３位</p>
+                            <img src="./IMG/順位ダウン.png" alt="↓">
+                        </div>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/時計台.jpg" alt="札幌市時計台"></a>
+                        <p class = "spotname">札幌市時計台</p>
+                        <p class = "placename">北海道／札幌市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="3.5"></span>
+                            <span class = "ratecolor">3.5</span>
+                        </p>
+                        <div class="rank">
+                            <p>４位</p>
+                            <img src="./IMG/順位アップ.png" alt="↑">
+                        </div>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/金刀比羅宮.JPG" alt="金刀比羅宮"></a>
+                        <p class = "spotname">金刀比羅宮</p>
+                        <p class = "placename">香川県／琴平町</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.0"></span>
+                            <span class = "ratecolor">4.0</span>
+                        </p>
+                        <div class="rank">
+                            <p>５位</p>
+                            <img src="./IMG/順位ダウン.png" alt="↓">
+                        </div>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/竹林の小径.JPG" alt="嵐山 竹林の小径"></a>
+                        <p class = "spotname">嵐山 竹林の小径</p>
+                        <p class = "placename">京都府／京都市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.5"></span>
+                            <span class = "ratecolor">4.5</span>
+                        </p>
+                        <div class="rank">
+                            <p>６位</p>
+                            <img src="./IMG/順位アップ.png" alt="↑">
+                        </div>
+                    </div>
+
+                    <div class = "item">
+                        <a href=""><img src="./IMG/神戸.JPG" alt="神戸"></a>
+                        <p class = "spotname">神戸ポートタワー</p>
+                        <p class = "placename">兵庫県／神戸市</p>
+                        <p class="rate">
+                            <span class = "star5_rating" data-rate="4.0"></span>
+                            <span class = "ratecolor">4.0</span>
+                        </p>
+                        <div class="rank">
+                            <p>７位</p>
+                            <img src="./IMG/順位キープ.png" alt="→">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class = "lastLP"><img src="./IMG/クレカバナー.jpg" alt="広告"></div>
+
+        <div class = "footer">
+
+            <div class = "footermenu">
+
+
+                <ul class = "marginleft">
+                    <li class = "headline">トップページ</li>
+                    <li><a href="">お知らせ</a></li>
+                    <li><a href="">宿泊予約</a></li>
+                    <li><a href="">エリアから探す</a></li>
+                    <li><a href="">ブログ</a></li>
+                    <li><a href="">サイトマップ</a></li>
+                </ul>
+
+                <ul class = "marginleft">
+                    <li class = "headline">サポート</li>
+                    <li><a href="">よくある質問</a></li>
+                    <li><a href="">お問い合わせ</a></li>
+                    <li><a href="">ヘルプ</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+
+                <ul class = "paddingleft">
+                    <li class = "headline">規定</li>
+                    <li><a href="">利用規約</a></li>
+                    <li><a href="">プライバシー</a></li>
+                    <li><a href="">Cookie</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+
+                <ul class = "marignright">
+                    <li class = "headline">宿.comについて</li>
+                    <li><a href="">会社概要</a></li>
+                    <li><a href="">旅行ガイド</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            
+            <p>Yado.com Group</p>
+
+        </div>
+    </div>
+</body>
+</html>
