@@ -1,0 +1,943 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Arial","Hiragino Sans","Hiragino Kaku Gothic ProN","Meiryo","Helvetica",sans-serif;
+}
+
+/* 広告 */
+.LP {
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.lastLP img {
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/* ヘッダーナビ */
+.header-navi {
+    height: 70px;
+    width: 100%;
+}
+
+.header-navi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-navi div {
+    font-weight: 300;
+    padding: 0 20px;
+}
+
+.header-main, .header-menu {
+    display: flex;
+}
+
+.header-main div, .header-menu div {
+    margin: auto;
+    padding: 15px 5px 15px 35px;
+}
+
+.header-main div:hover, .header-menu div:hover {
+    text-decoration: underline;
+}
+
+.header-menu a {
+    font-weight: 600;
+}
+
+.logoimg {
+    background-image: url(../IMG/宿.comロゴマーク_オレンジ.png);
+    background-size: cover;
+    height: 60px;
+    min-width: 120px;
+}
+
+@media screen and (max-width:755px) {
+    .header-navi {
+        height: 125px;
+    }
+}
+/* キャンペーンヘッダー */
+.header-photo {
+    background-image: url(../IMG/campaignphoto.JPG);
+    background-size: cover;
+    background-position: bottom 27% right 0;
+    color: #fff;
+    font-weight: 300;
+    height: 250px;
+    width: 100%;
+}
+
+.campaign {
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 50px;
+    padding-top: 40px;
+    text-shadow: 0 0 12px #fff;
+}
+
+.campaign-period {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 12px;
+    letter-spacing: 0.1em;
+}
+
+.campaign-detail {
+    background-color: rgba(250, 250, 245, 0.7);
+    border: solid 2px black;
+    box-shadow: 0 0 1px #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 7px;
+}
+
+.campaign-detail:hover {
+    background-color: #ddd;
+}
+
+/* 入力項目欄 */
+.header-inputitem {
+    background-color: #fff;
+    border: solid 0.5px rgb(110, 110, 110);
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 1px #aaa;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+    margin-top: -10px;
+    padding: 30px 20px 60px;
+}
+
+.placeitem, .peopleitem {
+    margin-left: 10px;
+}
+
+.dayitem {
+    margin-left: 30px;
+}
+
+.placeitem input {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    height: 50px;
+    width: 320px;
+}
+
+.dayitem input {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 50px;
+    width: 150px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex p {
+    font-size: 18px;
+    margin: auto 0;
+    margin-right: 20px; 
+}
+
+.header-inputitem input:hover, .peopleitem select:hover {
+    background-color: #eee;
+}
+
+.header-inputitem input:focus {
+    background-color: #eee;
+}
+
+.header-inputitem label {
+    display: inline-block;
+    margin: 10px;
+}
+
+.placeitem label {
+    font-size: 24px;
+}
+
+.dayitem label , .peopleitem label  {
+    font-size: 18px;
+    margin: 17px 10px 10px;
+}
+
+#place {
+    padding-left: 20px;
+}
+
+.peopleitem {
+    display: flex;
+    width: 280px;
+}
+
+#child, #adult {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    margin-right: 20px;
+    height: 50px;
+    width: 120px;
+}
+
+.search {
+    margin-top: 50px;
+}
+
+.search a {
+    background-color: rgb(64, 55, 195);
+    border: solid 2px rgb(64, 55, 195);
+    border-radius: 25px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px;
+}
+
+.search a:hover {
+    background-color: rgb(87, 79, 200);
+    border: solid 2px rgb(87, 79, 200);
+}
+
+/* ホテル、スポット、ランキング紹介欄 */
+.hotel-h1, .spot-h1 ,.ranking-h1, .oshi-h1 {
+    color: #151515;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 5px 40px;
+    margin: 80px 20px -20px;
+}
+
+.trip img {
+    display: block;
+    /* border: solid 1px #aaa; */
+    border-radius: 7px;
+    /* box-shadow: 1px 1px 2px rgb(196, 196, 252);  */
+    height: 230px;
+    width: 270px;
+}
+
+.hotel, .spot, .ranking {
+    /* border: solid 0.5px #aaa; */
+    display: flex;
+    margin: 0 auto;
+    overflow-x: scroll;
+    width: 95%;
+}
+
+.hotel .item, .spot .item, .ranking .item {
+    border: solid 1px #aaaaaa33;
+    border-radius: 7px;
+    box-shadow: .5px .5px #aaaaaa30 inset,
+                2px 2px 5px #aaaaaa30;
+    flex-shrink: 0;
+    height: 400px;
+    margin: 50px 25px;
+}
+
+.hotel img, .spot img, .ranking img {
+    object-fit: cover;
+}
+
+.hotelname, .spotname {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transform: scale(1.0, 1.2);
+}
+
+.placename {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.rate {
+    margin: 10px;
+}
+
+.star5_rating{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: #CCCCCC; /* グレーカラー 自由に設定化 */
+    /*font-size: 30px; フォントサイズ 自由に設定化 */
+}
+
+.star5_rating:before, .star5_rating:after{
+    content: '★★★★★';
+}
+
+.star5_rating:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffa155; /* カラー 自由に設定化 */
+}
+
+.star5_rating[data-rate="5.0"]:after{ width: 100%; } /* 星5 */
+.star5_rating[data-rate="4.5"]:after{ width: 90%; } /* 星4.5 */
+.star5_rating[data-rate="4.0"]:after{ width: 80%; } /* 星4 */
+.star5_rating[data-rate="3.5"]:after{ width: 70%; } /* 星3.5 */
+.star5_rating[data-rate="3.0"]:after{ width: 60%; } /* 星3 */
+.star5_rating[data-rate="2.5"]:after{ width: 50%; } /* 星2.5 */
+.star5_rating[data-rate="2.0"]:after{ width: 40%; } /* 星2 */
+.star5_rating[data-rate="1.5"]:after{ width: 30%; } /* 星1.5 */
+.star5_rating[data-rate="1.0"]:after{ width: 20%; } /* 星1 */
+.star5_rating[data-rate="0.5"]:after{ width: 10%; } /* 星0.5 */
+.star5_rating[data-rate="0"]:after{ width: 0%; } /* 星0 */
+
+.ratecolor {
+    color: #ffa155;
+}
+
+.money {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: right;
+    margin: 30px 15px 15px;
+}
+
+.money span {
+    font-size: 16px;
+}
+
+.other {
+    color: rgb(247, 192, 26);
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+    margin: 30px 15px 15px;
+}
+
+.other:hover {
+    text-decoration: underline;
+}
+
+.rank {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.rank p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.first {
+    color: #FFD700;
+}
+
+.second {
+    color: #C0C0C0;
+}
+
+.third{
+    color: #C47222;
+}
+
+.rank img {
+    height: 50px;
+    width: 50px;
+    margin-top: -15px;
+}
+
+/* 今週のイチオシ欄 */
+.recommend {
+    display: flex;
+    margin: 0 auto;
+    overflow-x: scroll;
+    width: 95%;
+}
+
+.recommend div {
+    /* box-shadow: 1px 1px #aaa inset; */
+    border-radius: 7px;
+    flex-shrink: 0;
+    margin: 50px 25px;
+}
+
+.recommend a {
+    color: rgba(238, 238, 238, 0);
+    display: block;
+    height: 220px;
+    width: 230px;
+    transition: .3s;
+}
+
+.recommend a:hover {
+    display: block;
+    height: 250px;
+    width: 350px;
+}
+
+.pc {
+    display: inline-block;
+}
+
+.mobile {
+    display: none;
+}
+
+.photo1 span, .photo2 span, .photo5 span, .photo6 span {
+    font-size: 25px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+}
+
+.photo3 span, .photo4 span {
+    font-size: 25px;
+    position: relative;
+    top: 190px;
+    left: 15px;
+}
+
+.photo1 a {
+    background-image: url(../IMG/美ら海水族館230.png);   
+}
+.photo1 a:hover {
+    background-image: url(../IMG/美ら海水族館350.jpeg);
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
+
+.photo2 a {
+    background-image: url(../IMG/東尋坊230.png);
+}
+.photo2 a:hover {
+    background-image: url(../IMG/東尋坊350.jpeg);
+    color: rgba(238, 238, 238);
+    text-shadow: 1px 1px #000;
+}
+
+.photo3 a {
+    background-image: url(../IMG/アドベンチャーパンダ230.png);
+}
+.photo3 a:hover {
+    background-image: url(../IMG/アドベンチャーワールド350.jpeg);
+    color: rgba(238, 238, 238);
+    text-shadow: 1px 1px #000;
+}
+
+.photo4 a {
+    background-image: url(../IMG/いおワールドかごしま水族館230.png);
+}
+.photo4 a:hover {
+    background-image: url(../IMG/いおワールドかごしま水族館350.jpeg);
+    color: rgba(238, 238, 238);
+    text-shadow: 1px 1px #000;
+}
+
+.photo5 a {
+    background-image: url(../IMG/松本城230.png);
+}
+.photo5 a:hover {
+    background-image: url(../IMG/松本城350.jpeg);
+    color: rgba(238, 238, 238);
+    text-shadow: 1px 1px #000;
+}
+
+.photo6 a {
+    background-image: url(../IMG/渦潮クルーズ230.png);
+}
+.photo6 a:hover {
+    background-image: url(../IMG/渦潮クルーズ350.jpeg);
+    color: rgba(238, 238, 238);
+    text-shadow: 1px 1px #000;
+}
+
+.photo7, .photo8, .photo9 {
+    display: none;
+}
+
+/* フッター */
+.footer {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footermenu {
+    display: flex;
+    text-align: left;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.footermenu .headline {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footermenu ul {
+    width: 160px;
+}
+
+.footer li {
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 50px auto 20px;
+    width: 640px;
+}
+
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+/* レスポンシブ対応 */
+@media screen and (max-width:430px) {
+ 
+/* 広告 */
+.LP img {
+    width: 100vw;
+}
+
+.lastLP img {
+    height: 38px;
+    margin-top: 60px;
+    width: 100vw;
+}
+
+/* ヘッダーナビ */
+.header-navi {
+    font-size: 9px;
+    height: 35px;
+    width: 100vw;
+}
+
+.header-navi div {
+    font-weight: 300;
+    padding: 0 5px;
+}
+
+.header-main div, .header-menu div {
+    margin: auto;
+    padding: 5px 2px 5px 10px;
+}
+
+.logoimg {
+    height: 30px;
+    min-width: 60px;
+}
+
+/* キャンペーンヘッダー */
+.header-photo {
+    height: 180px;
+}
+
+.campaign {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 30px;
+    padding-top: 30px;
+    text-shadow: 0 0 10px #fff;
+}
+
+.campaign-detail {
+    border: solid 1px black;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* 入力項目欄 */
+.header-inputitem {
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 20px 0 25px;
+}
+
+.placeitem, .peopleitem, .dayitem {
+    margin-left: 0px;
+}
+
+.placeitem input {
+    margin-right: 20px;
+    width: 358px;
+}
+
+.placeitem label {
+    font-size: 16px;
+}
+
+.dayitem label {
+    font-size: 16px;
+    margin: 15px 30px 10px;
+}
+
+.adultlabel label{
+    font-size: 16px;
+    margin: 12px 0 8px 20px;
+}
+
+.childlabel label{
+    font-size: 16px;
+    margin: 12px 0 8px 43px;
+}
+
+.peopleitem {
+    width: 378px;
+}
+
+#place {
+    margin: 0 auto;
+}
+
+.flex {
+    margin-left: 20px;
+}
+
+#adult {
+    margin-left: 10px;
+    width: 150px;
+}
+#child {
+    margin-left: 38px;
+    width: 150px;
+}
+
+.search {
+    margin-top: 30px;
+}
+
+/* ホテル紹介欄 */
+.hotel-h1, .spot-h1 ,.ranking-h1 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 60px 20px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oshi-h1 {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 60px 20px 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hotel-h1:before, .hotel-h1:after{
+    border: solid 1px #aaa;
+    content: "";
+    width: 3.5em;
+}
+.spot-h1:before, .spot-h1:after {
+    border: solid 1px #aaa;
+    content: "";
+    width: 3em;
+}
+
+.oshi-h1:before, .oshi-h1:after {
+    border: solid 1px #aaa;
+    content: "";
+    width: 3em;
+}
+
+.ranking-h1:before, .ranking-h1:after {
+    border: solid 1px #aaa;
+    content: "";
+    width: 3em;
+}
+
+.trip img {
+    display: block;
+    border-radius: 7px;
+    height: 150px;
+    margin-top: -20px;
+    width: 165px;
+}
+
+.hotel, .spot, .ranking {
+    border: solid 0px ;
+    display: flex;
+    margin: 0;
+    width: 95%;
+}
+
+.hotel .item, .spot .item, .ranking .item {
+    border: none;
+    box-shadow: none;
+    height: 220px;
+    margin: 50px 25px;
+}
+
+.hotelname, .spotname {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 10px 0 10px;
+    transform: scale(1.0, 1.3);
+}
+
+.placename {
+    font-size: 13px;
+    margin: 0 6px;
+}
+
+.rate {
+    margin: 6px 0;
+}
+
+.money {
+    font-size: 19px;
+    margin: 20px 0 10px;
+}
+
+.money span {
+    font-size: 14px;
+}
+
+.other {
+    margin: 30px 0 15px;
+}
+
+.rank {
+    margin-right: 0px;
+}
+
+.rank p {
+    font-size: 20px;
+}
+
+.rank img {
+    height: 45px;
+    width: 45px;
+    margin-top: -12px;
+}
+
+/* 今週のイチオシ欄 */
+.recommend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 15px auto;
+    overflow-y: hidden;
+    width: 97%;
+}
+
+.recommend div {
+    border-radius: 7px;
+    flex-shrink: 0;
+    margin: 7px;
+}
+
+.recommend a {
+    color: #000;
+    display: block;
+    height: 110px;
+    width: 110px;
+}
+
+.pc {
+    display: none;
+}
+.mobile {
+    color: #fff;
+    display: inline-block;
+}
+
+.photo7, .photo8, .photo9 {
+    display: inline-block;
+}
+
+.photo1 span, .photo2 span, .photo3 span,
+.photo4 span, .photo5 span, .photo6 span,
+.photo7 span, .photo8 span, .photo9 span {
+    font-size: 14px;
+    letter-spacing: .2em;
+    left: 0;
+    top: 85px;
+    text-shadow: 1px 1px black;
+    position: relative;
+    
+}
+
+.photo1 a {
+    background-image: url(../IMG/沖縄110.png);
+    background-size: cover;
+}
+.photo2 a {
+    background-image: url(../IMG/福井110.png);
+    background-size: cover;
+}
+.photo3 a {
+    background-image: url(../IMG/和歌山110.png);
+    background-size: cover;
+}
+.photo4 a {
+    background-image: url(../IMG/鹿児島110.png);
+    background-size: cover;
+}
+.photo5 a {
+    background-image: url(../IMG/長野110.png);
+    background-size: cover;
+}
+.photo6 a {
+    background-image: url(../IMG/徳島110.png);
+    background-size: cover;
+}
+.photo7 a {
+    background-image: url(../IMG/静岡110.png);
+    background-size: cover;
+}
+.photo8 a {
+    background-image: url(../IMG/神奈川110.png);
+    background-size: cover;
+}
+.photo9 a {
+    background-image: url(../IMG/栃木110.png);
+    background-size: cover;
+}
+
+.photo9 {
+    visibility: hidden;
+}
+
+/* フッター */
+.footer {
+    margin-top: 60px;
+}
+
+.footermenu {
+    width: 85vw;
+}
+
+.footermenu .headline {
+    font-size: 10px;
+}
+
+.footer li {
+    font-size: 8px;
+    font-weight: 200;
+    margin: 8px 0 8px 15px ;
+}
+
+.footer p {
+    font-size: 14px;
+    width: 100vw;
+}
+
+}
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+@media screen and (max-width:390px) {
+/* ヘッダーナビ */
+.header-navi {
+    font-size: 8px;
+}
+
+.header-main div, .header-menu div {
+    margin: auto;
+    padding: 5px 2px 5px 10px;
+}
+
+/* 入力項目欄 */
+.flex {
+    margin-left: 15px;
+}
+
+/* ホテル紹介欄 */
+.hotel-h1, .spot-h1 , .oshi-h1, .ranking-h1 {
+    margin: 60px 0 0;
+}
+
+/* 今週のイチオシ欄 */
+.recommend div {
+    margin: 5px;
+}
+.recommend a {
+    height: 100px;
+    width: 100px;
+}
+
+.photo1 span, .photo2 span, .photo3 span,
+.photo4 span, .photo5 span, .photo6 span,
+.photo7 span, .photo8 span, .photo9 span  {
+    font-size: 14px;
+    letter-spacing: .2em;
+    position: relative;
+    left: 0;
+    top: 75px;
+    
+}
+
+}
+
+/* ----------------------------------------------- */
+
+@media screen and (max-width:375px) {
+    .flex {
+        width: 360px;
+        margin-left: 8px;
+    }
+
+    .flex input {
+        margin-right: 0;
+    }
+
+    .flex p {
+        margin: auto 20px;
+    }
+    .dayitem {
+        width: 100vw;
+    }
+
+    .dayitem label {
+        margin: 15px 20px 10px;
+    }
+
+    #adult {
+        margin-left: 10px;
+        width: 150px;
+    }
+    #child {
+        margin-left: 35px;
+        margin-right: 0;
+        width: 150px;
+    }
+
+    .recommend a {
+        height: 95px;
+        width: 95px;
+    }
+}
+
