@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Helvetica","Arial","Hiragino Sans","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.header-logo {
+    height: 90px;
+    width: 180px;
+    margin: 20px auto;
+}
+
+.header-logo img {
+    height: 90px;
+    width: 180px;
+}
+
+.main {
+    border: solid 3px #aaa;
+    border-radius: 5px;
+    margin: 80px auto 80px;
+    padding-bottom: 25px;
+    width: 560px;
+}
+
+.main h1 {
+    background-color: rgb(255, 147, 30);
+    color: #292929;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.loginpass h2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 0 5px 25px;
+    width: 530px;
+}
+
+.email, .pass {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.email input, .pass input {
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    box-shadow: 1px 1px #aaa inset;
+    padding: 15px;
+    margin: 10px 20px 20px 20px;
+    width: 450px;
+}
+
+.email input:hover, .pass input:hover {
+    background-color: #eeeeee;
+}
+
+.email input:focus, .pass input:focus {
+    background-color: #eee;
+}
+
+.login {
+    margin: 50px 0 35px;
+    text-align: center;
+}
+
+.login a {
+    background-color: rgb(64, 55, 195);
+    border: solid 2px rgb(64, 55, 195);
+    /* background-color: rgb(255, 147, 30);
+    border: solid 2px rgb(255, 147, 30); */
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px;
+    margin: auto;
+    width: 120px;
+}
+
+.login a:hover {
+    background-color: rgb(87, 79, 200);
+    border: solid 2px rgb(87, 79, 200);
+}
+
+.reset {
+    font-size: 14px;
+    color: rgb(80, 200, 230);
+    text-align: center;
+}
+
+.reset:hover {
+    text-decoration: underline;
+}
+
+.entry {
+    margin: 50px 0 35px;
+    text-align: center;
+}
+
+.entry a {
+    background-color: rgb(64, 55, 195);
+    border: solid 2px rgb(64, 55, 195);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px;
+    margin: auto;
+    width: 160px;
+}
+
+.entry a:hover {
+    background-color: rgb(87, 79, 200);
+    border: solid 2px rgb(87, 79, 200);
+}
+
+.entryform {
+    font-size: 13px;
+    margin: 12px;
+}
+
+
+@media screen and (max-width:430px) {
+    .main {
+        width: 100vw;
+    }
+
+    .loginpass h2 {
+        padding: 25px 0 5px 40px;
+        width: 100%;
+    }
+    
+    .email, .pass {
+        width: 95%;
+    }
+    
+    .email input, .pass input {
+        width: 90%;
+    }
+}
